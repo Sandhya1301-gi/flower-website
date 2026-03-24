@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flora Bliss</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 70px;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff7eb3;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Cards */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Video */
+.video video {
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* Form */
+form {
+    max-width: 350px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Contact */
+.contact {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2909/2909767.png">
+    <h1>Flora Bliss 🌸</h1>
+    <p>Fresh Flowers | Beautiful Moments</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#flowers">Flowers</a>
+    <a href="#video">Video</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
+    <h2>Welcome to Flora Bliss 💐</h2>
+    <p>Experience the beauty of nature with our premium flowers</p>
+</section>
+
+<section id="flowers" class="gallery">
+    <div class="card">
+        <img src="rose.jpeg">
+        <h3>Rose Bouquet</h3>
+    </div>
+
+    <div class="card">
+        <img src="sunflower.jpeg">
+        <h3>Sunflower</h3>
+    </div>
+
+    <div class="card">
+        <img src="mixed.jpeg">
+        <h3>Mixed Flowers</h3>
+    </div>
+</section>
+
+
+
+<section id="order">
+    <h2>Order Now 🛒</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select>
+            <option>Choose Flower</option>
+            <option>Rose</option>
+            <option>Sunflower</option>
+            <option>Lily</option>
+        </select>
+
+        <textarea placeholder="Delivery Address"></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us 📞</h2>
+    <p>📍 Chennai, India</p>
+    <p>📞 +91 9876543210</p>
+    <p>📧 florabliss@email.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Flora Bliss | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
